@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 62.5%; /* (62.5/100) * 16px = 10px */
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+label,
+button,
+select,
+summary,
+[type="radio"],
+[type="submit"],
+[type="checkbox"] {
+  cursor: pointer;
+}
+
+.header__title {
+  font-size: 7rem;
+}
+
+button {
+  border: none;
+  font-size: 3rem;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+}
+
+.button > button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  flex-grow: 1;
+  margin: 10px;
+}
+
+.button__green {
+  background-color: green;
+}
+
+.button__red {
+  background-color: red;
+}
+
+.button__blue {
+  background-color: blue;
+  color: aliceblue;
+}
